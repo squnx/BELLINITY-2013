@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><!-- InstanceBegin template="/Templates/Secure.dwt" codeOutsideHTMLIsLocked="false" --> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <link rel="stylesheet" href="/stylesheets/ie8.css"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- InstanceBeginEditable name="doctitle" --><title></title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
+        
+    <!-- InstanceEndEditable -->
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="/stylesheets/foundation.css">
+  
+  <!-- Included CSS Files (Compressed) -->
+  <!-- <link rel="stylesheet" href="stylesheets/foundation.min.css"> -->
+  <link rel="stylesheet" href="/stylesheets/app.css">
+
+  <script src="/javascripts/modernizr.foundation.js"></script>
+  <!-- TypeKit WebFont -->
+  <script type="text/javascript" src="//use.typekit.net/vnq0kky.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
+</head>
+<body>
+<!-- TEMP SIZE -->
+	<div id="fqv" style="position:fixed;top:4px;left:4px;z-index:999;color:#fff;"><p style="font-size:12px;background:rgba(0,0,0,0.75);padding:5px;margin-bottom:1px;line-height:1.2;"><span class="left">Media:</span> <span style="font-weight:bold;" class="show-for-xlarge">Extra Large</span><span style="font-weight:bold;" class="show-for-large">Large</span><span style="font-weight:bold;" class="show-for-medium">Medium</span><span style="font-weight:bold;" class="show-for-small">Small</span><span style="font-weight:bold;" class="show-for-landscape">Landscape</span><span style="font-weight:bold;" class="show-for-portrait">Portrait</span><span style="font-weight:bold;" class="show-for-touch">Touch</span></p></div>
+<!-- END TEMP SIZE -->
+<!-- -->
+<div class="container header">
+  	<div class="left header-left"><a href="/home"><img src="/images/logo.png"></a></div>
+    <div class="left header-secure-left hide-for-small">
+    	<a href="/dashboard"><img src="/images/secure_header_icon_home.png" class="left"></a>
+       	<a href="/private-profile"><img src="/images/secure_header_icon_profile.png" class="left"></a>
+        <a href="/messages"><img src="/images/secure_header_icon_message.png" class="left"></a>
+        <a href="/gallery"><img src="/images/secure_header_icon_gallery.png" class="left"></a>
+        <a href="/discover"><img src="/images/secure_header_icon_discover.png" class="left"></a>
+    </div>
+    <div class="right header-secure-right" style="background:url(/images/dev/chelsea_profile_pic.png) no-repeat center top; background-size: cover;"></div>
+    <div class="header-secure-right-arrow"><img src="/images/secure_header_icon_right_arrow.png"></div>
+    <div class="right header-secure-title-right">
+    	<h6 class="text-white uppercase">CHELSEA PENNER</h6>
+    </div>
+</div>
+<div class="header-shadow hide-for-small"></div>
+<div class="secure-zone-dropdown" style="display:none;">
+	<div class="secure-zone-dropdown-arrow"></div>
+    <ul>
+    	<a href="/public-profile" target="_blank"><li><img src="/images/icons-three/profile.png"><span>View My Public Profile</span></li></a>
+        <a href="/private-profile"><li><img src="/images/icons-three/profile.png"><span>View My Private Profile</span></li></a>
+        <a href="/edit-profile"><li><img src="/images/icons-three/edit.png"><span>Edit My Profile</span></li></a>
+        <a href="/profile-settings"><li><img src="/images/icons-three/settings.png"><span>Profile Settings</span></li></a>
+        <a href="/home"><li><img src="/images/icons-three/logout.png"><span>Logout</span></li></a>
+    </li>
+</div>
+
+<!-- InstanceBeginEditable name="ContentArea" -->
+<!-- -->
+<div class="row quarter-spacer"></div>
+<div class="row quarter-spacer show-for-small"></div>
+<div class="row portal">
+	<div class="eight columns"></div>
+	<div class="two columns mobile-two">
+        <a href="" class="button medium radius expand">Cancel Edits</a>
+    </div>
+    <div class="two columns mobile-two">
+        <a href="/dashboard" class="button medium radius expand">Save All Changes</a>
+    </div>
+</div>
+<div class="row portal">
+	<div class="twelve columns">
+    	<div class="discover-header-outer">
+        	<h5 class="text-red">Welcome Chelsea, please complete your profile</h5>
+        </div>
+    </div>
+</div>
+<!-- ROW 1 - GENERAL INFORMATION -->
+<div class="row portal">
+	<div class="twelve columns">
+    	<div class="edit-outer">
+        	<div class="edit-inner-left">
+            	<div class="edit-inner-left-icon"><img src="/images/icons-four/one.png"></div>
+            </div>
+            <div class="edit-inner-right">
+            	<h2>General Information</h2>
+                <div class="row">
+                	<div class="three columns">
+                    	<div class="edit-photo-outer">
+                        	<div class="center"><img src="/images/create_account_user_icon.png"></div>
+                    		<h5 class="text-center remove-margin">Click to add profile photo</h5>
+                    	</div>
+                    </div>
+                    <div class="six columns">
+                    	<h4>Chelsea Penner</h4>
+                        <input type="text" class="expand" placeholder="Your Profession">
+                        <textarea class="expand" placeholder="Say something about your self" rows="10"></textarea>
+                    </div>
+                    <div class="three columns"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ROW 2 - GENERAL INFORMATION -->
+<div class="row portal">
+	<div class="twelve columns">
+    	<div class="edit-outer">
+        	<div class="edit-inner-left">
+            	<div class="edit-inner-left-icon"><img src="/images/icons-four/two.png"></div>
+            </div>
+            <div class="edit-inner-right">
+            	<h2>Landscape Photo</h2>
+                <div class="row">
+                	<div class="nine columns">
+                    	<div class="edit-photo-outer portal">
+                        	<div class="center"><img src="/images/create_account_user_icon.png"></div>
+                    		<h5 class="text-center remove-margin">Click to add profile landscape photo</h5>
+                        </div>
+                        <input type="text" class="expand" placeholder="Click to add profile tagline">
+                    </div>
+                    <div class="three columns"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ROW 3 - ABOUT YOU -->
+<div class="row portal">
+	<div class="twelve columns">
+    	<div class="edit-outer">
+        	<div class="edit-inner-left">
+            	<div class="edit-inner-left-icon"><img src="/images/icons-four/three.png"></div>
+            </div>
+            <div class="edit-inner-right">
+            	<h2>About You</h2>
+                <div class="row">
+                	<div class="nine columns">
+                    	<input type="text" class="expand" placeholder="List your best talent">
+                        <textarea class="expand" placeholder="Your Bio: Describe Yourself. Do you have a favorite moment." rows="10"></textarea>	
+                    </div>
+                    <div class="three columns"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ROW 4 - PROFESSIONAL CREDITS -->
+<div class="row portal">
+	<div class="twelve columns">
+    	<div class="edit-outer">
+        	<div class="edit-inner-left">
+            	<div class="edit-inner-left-icon"><img src="/images/icons-four/four.png"></div>
+            </div>
+            <div class="edit-inner-right">
+            	<h2>Professional Credits</h2>
+                <div class="row">
+                	<div class="nine columns">
+                    	<div class="row">
+                        	<form class="custom">
+                                <div class="two columns">
+                                    <input type="text" class="expand" placeholder="Select Date">
+                                </div>
+                                <div class="three columns">
+                                    <select class="expand">
+                                        <option SELECTED>Select Category</option>
+                                        <option>Category 1</option>
+                                        <option>Category 2</option>
+                                        <option>Category 3</option>
+                                    </select>
+                                </div>
+                                <div class="six columns">
+                                	<input type="text" class="expand" placeholder="Credit Description">
+                                </div>
+                                <div class="one columns">
+                                	<a href=""><img src="/images/edit_account_close.png"></a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row extra">
+                        	<form class="custom">
+                                <div class="two columns">
+                                    <input type="text" class="expand" placeholder="Select Date">
+                                </div>
+                                <div class="three columns">
+                                    <select class="expand">
+                                        <option SELECTED>Select Category</option>
+                                        <option>Category 1</option>
+                                        <option>Category 2</option>
+                                        <option>Category 3</option>
+                                    </select>
+                                </div>
+                                <div class="six columns">
+                                	<input type="text" class="expand" placeholder="Credit Description">
+                                </div>
+                                <div class="one columns">
+                                	<a href=""><img src="/images/edit_account_plus.png"></a>
+                                </div>
+                            </form>
+                        </div>
+                    	
+                    </div>
+                    <div class="three columns"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ROW 5 - YOUR PROFILE LINKS -->
+<div class="row portal">
+	<div class="twelve columns">
+    	<div class="edit-outer">
+        	<div class="edit-inner-left">
+            	<div class="edit-inner-left-icon"><img src="/images/icons-four/five.png"></div>
+            </div>
+            <div class="edit-inner-right">
+            	<h2>Your Profile Links</h2>
+                <div class="row">
+                	<div class="nine columns">
+                    	<div class="row">
+                        	<form class="custom">
+                                <div class="six columns">
+                                	<input type="text" class="expand" placeholder="Enter URL Here">
+                                </div>
+                                <div class="three columns">
+                                    <select class="expand">
+                                        <option SELECTED>Select Link Type</option>
+                                        <option>Facebook</option>
+                                        <option>Instagram</option>
+                                        <option>Twitter</option>
+                                    </select>
+                                </div>
+                                <div class="two columns">
+                                    <select class="expand">
+                                        <option SELECTED>Select Privacy</option>
+                                        <option>Public</option>
+                                        <option>Private</option>
+                                    </select>
+                                </div>
+                                <div class="one columns">
+                                	<a href=""><img src="/images/edit_account_close.png"></a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row extra">
+                        	<form class="custom">
+                                <div class="six columns">
+                                	<input type="text" class="expand" placeholder="Enter URL Here">
+                                </div>
+                                <div class="three columns">
+                                    <select class="expand">
+                                        <option SELECTED>Select Link Type</option>
+                                        <option>Facebook</option>
+                                        <option>Instagram</option>
+                                        <option>Twitter</option>
+                                    </select>
+                                </div>
+                                <div class="two columns">
+                                    <select class="expand">
+                                        <option SELECTED>Select Privacy</option>
+                                        <option>Public</option>
+                                        <option>Private</option>
+                                    </select>
+                                </div>
+                                <div class="one columns">
+                                	<a href=""><img src="/images/edit_account_plus.png"></a>
+                                </div>
+                            </form>
+                        </div>
+                    	
+                    </div>
+                    <div class="three columns"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ROW 7 - YOUR INTERESTS -->
+<div class="row portal">
+	<div class="twelve columns">
+    	<div class="edit-outer">
+        	<div class="edit-inner-left">
+            	<div class="edit-inner-left-icon"><img src="/images/icons-four/six.png"></div>
+            </div>
+            <div class="edit-inner-right">
+            	<h2>Your Interests</h2>
+                <div class="row">
+                	<div class="nine columns">
+                    	<ul class="block-grid four-up mobile">
+                          <li>Four-up element</li>
+                          <li>Four-up element</li>
+                          <li class="selected">Four-up element</li>
+                          <li>Four-up element</li>
+                          <li class="selected">Four-up element</li>
+                          <li>Four-up element</li>
+                        </ul>
+                        <input type="text" class="expand" placeholder="Add new interest">
+                    	
+                    	
+                    </div>
+                    <div class="three columns"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ROW 7 - YOUR STATS -->
+<div class="row portal">
+	<div class="twelve columns">
+    	<div class="edit-outer">
+        	<div class="edit-inner-left">
+            	<div class="edit-inner-left-icon"><img src="/images/icons-four/seven.png"></div>
+            </div>
+            <div class="edit-inner-right">
+            	<h2>Your Stats</h2>
+                <div class="row">
+                	<form class="custom">
+                        <div class="nine columns">
+                            <div class="row">
+                                <h5>Location</h5>
+                                <div class="five columns">
+                                    <select class="expand">
+                                        <option SELECTED>Select Country</option>
+                                        <option>United States</option>
+                                        <option>Canada</option>
+                                    </select>
+                                </div>
+                                <div class="three columns">
+                                    <select class="expand">
+                                        <option SELECTED>Select State</option>
+                                        <option>AZ</option>
+                                        <option>CA</option>
+                                    </select>
+                                </div>
+                                <div class="four columns">
+                                	<input type="text" class="expand" placeholder="City">
+                                </div>
+                            </div>
+                            <div class="row quarter-spacer hide-for-small"></div>
+                            <div class="row">
+                            	<div class="four columns">
+                                	<h5>Gender</h5>
+                                    <label for="radio1"><input name="radio1" type="radio" id="radio1" style="display:none;"><span class="custom radio"></span> Female</label>
+      								<label for="radio2"><input name="radio1" type="radio" id="radio2" style="display:none;"><span class="custom radio checked"></span> Male</label>
+                                </div>
+                                <div class="four columns">
+                                	<h5>Experience</h5>
+                                    <label for="radio1"><input name="radio2" type="radio" id="radio1" style="display:none;"><span class="custom radio"></span> No Experience</label>
+                                      <label for="radio2"><input name="radio2" type="radio" id="radio2" style="display:none;"><span class="custom radio checked"></span> Some Experience</label>
+                                      <label for="radio2"><input name="radio2" type="radio" id="radio2" style="display:none;"><span class="custom radio checked"></span> Experienced</label>
+                                      <label for="radio2"><input name="radio2" type="radio" id="radio2" style="display:none;"><span class="custom radio checked"></span> Very Experienced</label>
+                                </div>
+                                <div class="four columns">
+                                	<h5>Compensation</h5>
+                                    <label for="radio1"><input name="radio3" type="radio" id="radio1" style="display:none;"><span class="custom radio"></span> Any</label>
+                                     <label for="radio1"><input name="radio3" type="radio" id="radio1" style="display:none;"><span class="custom radio"></span> Depends on Assignment</label>
+                                      <label for="radio1"><input name="radio3" type="radio" id="radio1" style="display:none;"><span class="custom radio"></span> Paid Assignments Only</label>
+                                       <label for="radio1"><input name="radio3" type="radio" id="radio1" style="display:none;"><span class="custom radio"></span> Time for Print</label>
+                                </div>
+                            </div>
+                            <div class="row quarter-spacer hide-for-small"></div>
+                            <div class="row">
+                            	<div class="twelve columns">
+                                	<h5>Genres</h5>
+                                    <div class="row">
+                                    	<div class="four columns">
+                                        	<label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Acting</label>
+                                            <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Art</label>
+                                            <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Bodypaint</label>
+                                            <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Cosplay</label>
+                                        </div>
+                                        <div class="four columns">
+                                        	<label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Dance</label>
+                                            <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Editorial</label>
+                                            <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Erotic</label>
+                                            <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Fashion</label>
+                                        </div>
+                                        <div class="four columns">
+                                        	<label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Fetish</label>
+                                            <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Fit Modeling</label>
+                                            <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Fitness</label>
+                                            <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Glamour</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row quarter-spacer hide-for-small"></div>
+                            <div class="row">
+                            	<div class="four columns">
+                                	<h5>Height</h5>
+                                    <div class="row">
+                                    	<div class="three columns mobile-two">
+                                    		<input type="text" class="expand">
+                                    	</div>
+                                        <div class="three columns mobile-two">
+                                        	<label class="left inline">feet</label>	
+                                        </div>
+                                        <div class="three columns mobile-two">
+                                    		<input type="text" class="expand">
+                                    	</div>
+                                        <div class="three columns mobile-two">
+                                        	<label class="left inline">inches</label>	
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="four columns">
+                                	<h5>Hair Color</h5>
+                                    <select class="expand">
+                                    	<option SELECTED>Select Hair Color</option>
+                                        <option>Brunette</option>
+                                    </select>
+                                </div>
+                                <div class="four columns">
+                                	<h5>Eye Color</h5>
+                                    <select class="expand">
+                                    	<option SELECTED>Select Eye Color</option>
+                                        <option>Brunette</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row quarter-spacer hide-for-small"></div>
+                            <div class="row">
+                            	<div class="four columns">
+                                    <h5>Weight</h5>
+                                    <div class="row">
+                                        <div class="six columns mobile-two">
+                                                <input type="text" class="expand">
+                                            </div>
+                                            <div class="six columns mobile-two">
+                                                <label class="left inline">lbs</label>	
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="four columns">
+                                	<h5>Hair Length</h5>
+                                	<select class="expand">
+                                    	<option SELECTED>Select Hair Length</option>
+                                        <option>Brunette</option>
+                                    </select>	
+                                </div>
+                                <div class="four columns">
+                                	<h5>Ethnicity</h5>
+                                    <select class="expand">
+                                    	<option SELECTED>Select Ethnicity</option>
+                                        <option>Brunette</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row quarter-spacer hide-for-small"></div>
+                            <div class="row">
+                            	<div class="four columns">
+                                	<h5>Skin Color</h5>
+                                    <select class="expand">
+                                    	<option SELECTED>Select Skin Color</option>
+                                        <option>Brunette</option>
+                                    </select>
+                                </div>
+                                <div class="four columns">
+                                	<h5>Shoot Nudes?</h5>
+                                    <select class="expand">
+                                    	<option SELECTED>Select Shoot Nudes?</option>
+                                        <option>Brunette</option>
+                                    </select>
+                                </div>
+                            	<div class="four columns"></div>
+                            </div>
+                            <div class="row quarter-spacer hide-for-small"></div>
+                            <div class="row">
+                            	<div class="four columns">
+                                	<h5>Bust</h5>
+                                	<input type="text" class="expand">
+                                </div>
+                                <div class="four columns">
+                                	<h5>Hips</h5>
+                                	<input type="text" class="expand">
+                                </div>
+                                <div class="four columns">
+                                	<h5>Dress</h5>
+                                	<input type="text" class="expand">
+                                </div>
+                            </div>
+                            <div class="row quarter-spacer hide-for-small"></div>
+                            <div class="row">
+                            	<div class="four columns">
+                                	<h5>Waist</h5>
+                                    <input type="text" class="expand">
+                                </div>
+                                <div class="four columns">
+                                	<h5>Cup</h5>
+                                    <select class="expand">
+                                    	<option SELECTED>Select Cup Size</option>
+                                        <option>Brunette</option>
+                                    </select>
+                                </div>
+                                <div class="four columns">
+                                	<h5>Shoe</h5>
+                                    <select class="expand">
+                                    	<option SELECTED>Select Shoe Size</option>
+                                        <option>Brunette</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row quarter-spacer hide-for-small"></div>
+                            <div class="row">
+                            	<div class="twelve columns">
+                                	<h5>Keywords</h5>
+                            		<input type="text" class="expand" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row spacer"></div>
+                        </div>
+                    </form>
+                    <div class="three columns"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row portal">
+	<div class="eight columns"></div>
+	<div class="two columns mobile-two">
+        <a href="" class="button medium radius expand">Cancel Edits</a>
+    </div>
+    <div class="two columns mobile-two">
+        <a href="/dashboard" class="button medium radius expand">Save All Changes</a>
+    </div>
+</div>
+
+
+    <!-- InstanceEndEditable -->
+<div class="footer-shadow hide-for-small"></div>
+<div class="container footer">
+	<div class="row">
+                <div class="two columns mobile-two">
+                    <ul>
+                        <li><strong>ABOUT BELLINITY</strong></li>
+                        <li><a href="">How Bellinity Works</a></li>
+                        <li><a href="">Our Company</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="two columns mobile-two">
+                	<ul>
+                        <li><strong>PLATFORM DETAILS</strong></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Help & FAQ</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="six columns mobile-two"></div>
+                <div class="two columns mobile-two">
+                    <div class="right footer-icons-outer">
+                        <a href=""><img src="/images/footer_pinterest.png" class="left footer-icons"></a>
+                        <a href=""><img src="/images/footer_googleplus.png" class="left footer-icons"></a>
+                        <a href=""><img src="/images/footer_twitter.png" class="left footer-icons"></a>
+                        <a href=""><img src="/images/footer_facebook.png" class="left footer-icons"></a>
+                    </div>
+                    <div class="right">
+                        <img src="/images/footer_logo.png" class="right">
+                    </div>
+                </div>
+            </div>
+</div>
+<div class="container sub-footer">
+	<div class="row">
+    	<div class="three columns centered">
+        	<p class="text-center text-white">© 2013 Bellinity. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+  
+  
+  
+  
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  
+  <script src="javascripts/jquery.js"></script>
+  
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  
+  <script src="javascripts/jquery.foundation.buttons.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  
+  <script src="javascripts/jquery.placeholder.js"></script>
+  
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  
+  <script src="javascripts/jquery.foundation.joyride.js"></script>
+  
+  <script src="javascripts/jquery.foundation.clearing.js"></script>
+  
+  <script src="javascripts/jquery.foundation.magellan.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="/javascripts/app.js"></script>
+</body>
+<!-- InstanceEnd --></html>

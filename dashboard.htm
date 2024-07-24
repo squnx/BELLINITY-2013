@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><!-- InstanceBegin template="/Templates/Secure.dwt" codeOutsideHTMLIsLocked="false" --> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <link rel="stylesheet" href="/stylesheets/ie8.css"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- InstanceBeginEditable name="doctitle" --><title></title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
+        
+    <!-- InstanceEndEditable -->
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="/stylesheets/foundation.css">
+  
+  <!-- Included CSS Files (Compressed) -->
+  <!-- <link rel="stylesheet" href="stylesheets/foundation.min.css"> -->
+  <link rel="stylesheet" href="/stylesheets/app.css">
+
+  <script src="/javascripts/modernizr.foundation.js"></script>
+  <!-- TypeKit WebFont -->
+  <script type="text/javascript" src="//use.typekit.net/vnq0kky.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
+</head>
+<body>
+<!-- TEMP SIZE -->
+	<div id="fqv" style="position:fixed;top:4px;left:4px;z-index:999;color:#fff;"><p style="font-size:12px;background:rgba(0,0,0,0.75);padding:5px;margin-bottom:1px;line-height:1.2;"><span class="left">Media:</span> <span style="font-weight:bold;" class="show-for-xlarge">Extra Large</span><span style="font-weight:bold;" class="show-for-large">Large</span><span style="font-weight:bold;" class="show-for-medium">Medium</span><span style="font-weight:bold;" class="show-for-small">Small</span><span style="font-weight:bold;" class="show-for-landscape">Landscape</span><span style="font-weight:bold;" class="show-for-portrait">Portrait</span><span style="font-weight:bold;" class="show-for-touch">Touch</span></p></div>
+<!-- END TEMP SIZE -->
+<!-- -->
+<div class="container header">
+  	<div class="left header-left"><a href="/home"><img src="/images/logo.png"></a></div>
+    <div class="left header-secure-left">
+    	<a href=""><img src="/images/header_icon_facebook.png" class="right"></a>
+        <a href=""><img src="/images/header_icon_twitter.png" class="right header-icon"></a>
+        <a href=""><img src="/images/header_icon_googleplus.png" class="right header-icon"></a>
+        <a href=""><img src="/images/header_icon_pinterest.png" class="right header-icon"></a>
+        <a href="" data-reveal-id="loginModal"><img src="/images/header_icon_profile.png" class="right header-icon"></a> 
+    </div>
+    <div class="right header-right show-for-small">
+    	<a href="" data-reveal-id="loginModal"><img src="/images/header_icon_mobile_profile.png" class="right"></a>
+    </div>
+</div>
+<div class="header-shadow hide-for-small"></div>
+
+<!-- InstanceBeginEditable name="ContentArea" -->
+<!-- -->
+<div class="row quarter-spacer"></div>
+<div class="row quarter-spacer show-for-small"></div>
+<div class="row">
+<div class="three columns">
+    	<div class="row portal">
+        	<div class="twelve columns">
+            	<div class="standard-profile-outer">
+                	<div class="standard-profile-left" style="background: url(/images/dev/chelsea_profile_pic.png) no-repeat center center; background-size: cover;"></div>
+                    <div class="standard-profile-right">
+                    	<h4 class="text-center text-red">Chelsea Penner</h4>
+                        <h4 class="text-center remove-margin"><small>Fashion Model</small></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row portal show-for-small">
+        	<div class="twelve columns">
+            	<div class="standard-red-header">
+                	<h5 class="text-white text-center">You have 2 events coming up this month</h5>
+                </div>
+            </div>
+    	</div>
+        <div class="row portal show-for-small">
+        	<div class="twelve columns">
+            	<div class="standard-two red">
+                	<div class="standard-two-left-title"><h6>Calendar</h6></div>
+                    <div class="standard-two-right"><img src="/images/icons-two/white_arrow.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row portal show-for-small">
+        	<div class="twelve columns">
+            	<div class="standard-two light-red">
+                	<div class="standard-two-left-title"><h6>Notifications</h6></div>
+                    <div class="standard-two-right"><img src="/images/icons-two/red_arrow.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row portal">
+        	<div class="twelve columns">
+            	<div class="standard-two">
+                	<div class="standard-two-left-image"><img src="/images/icons-two/star.png"></div>
+                    <div class="standard-two-left-title"><h6>Profile Stars</h6></div>
+                    <div class="standard-two-right"><h6 class="text-right">18</h6></div>
+                </div>
+            </div>
+        </div>
+        <div class="row portal">
+        	<div class="twelve columns">
+            	<div class="standard-two">
+                	<div class="standard-two-left-image"><img src="/images/icons-two/mail.png"></div>
+                    <div class="standard-two-left-title"><h6>New Messages</h6></div>
+                    <div class="standard-two-right"><h6 class="text-right">10</h6></div>
+                </div>
+            </div>
+        </div>
+        <div class="row portal">
+        	<div class="twelve columns">
+            	<div class="standard-two">
+                	<div class="standard-two-left-image"><img src="/images/icons-two/event.png"></div>
+                    <div class="standard-two-left-title"><h6>Next Event</h6></div>
+                    <div class="standard-two-right"><h6 class="text-right">1d 2h 3m</h6></div>
+                </div>
+            </div>
+        </div>
+        <div class="row portal">
+        	<div class="twelve columns">
+            	<div class="standard-two">
+                	<div class="standard-two-left-image"><img src="/images/icons-two/video.png"></div>
+                    <div class="standard-two-left-title"><h6>Video Requests</h6></div>
+                    <div class="standard-two-right"><h6 class="text-right">58</h6></div>
+                </div>
+            </div>
+        </div>
+        <div class="row portal">
+        	<div class="twelve columns">
+            	<div class="standard-two">
+                	<div class="standard-two-left-image"><img src="/images/icons-two/money.png"></div>
+                    <div class="standard-two-left-title"><h6>Account Balance</h6></div>
+                    <div class="standard-two-right"><h6 class="text-right">$3,238</h6></div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="six columns">
+    	<div class="row portal hide-for-small">
+        	<div class="twelve columns">
+            	<div class="standard-red-header">
+                	<h5 class="text-white text-center">You have 2 events coming up this month</h5>
+                </div>
+            </div>
+    	</div>
+        <div class="row portal hide-for-small">
+        	<div class="twelve columns">
+            	<div class="standard-calendar-outer">
+                    <div class="standard-calendar-red-header">
+                        <h5 class="text-white text-center">February</h5>
+                    </div>
+                    <table class="standard-calendar" cellspacing="0" cellpadding="0">
+                    	<thead>
+                        	<tr>
+                            	<td>Sunday</td>
+                                <td>Monday</td>
+                                <td>Tuesday</td>
+                                <td>Wednesday</td>
+                                <td>Thursday</td>
+                                <td>Friday</td>
+                                <td>Saturday</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td><p>27</p></td>
+                                <td><p>28</p></td>
+                                <td><p>29</p></td>
+                                <td><p>30</p></td>
+                                <td><p>31</p></td>
+                                <td class="current"><p>1</p></td>
+                                <td class="current"><p>2</p></td>
+                            </tr>
+                            <tr>
+                            	<td class="current"><p>3</p></td>
+                                <td class="current"><p>4</p></td>
+                                <td class="current"><p>5</p></td>
+                                <td class="current"><p>6</p></td>
+                                <td class="current"><p>7</p></td>
+                                <td class="current"><p>8</p></td>
+                                <td class="current"><p>9</p></td>
+                            </tr>
+                            <tr>
+                            	<td class="current"><p>10</p></td>
+                                <a href=""><td class="active"><p>12</p>
+                                	<div class="standard-calendar-event" style="display:none;">
+                                		<div class="standard-calendar-event-arrow"></div>
+                                        <!-- <div class="standard-calendar-event-close"><img src="/images/icons-three/close.png"></div> -->
+                                        <h5 class="text-red remove-margin"><a href="">This is the title for this event</a></h5>
+                                        <h6 class="remove-margin">February 12 at 8:00 PM<br/>
+                                        Current bid $982</h6>
+                                        <div class="standard-calendar-event-lower-right"><h6 class="remove-margin"><a href="">View Event</a></h6></div>
+                                	</div>
+                                </td></a>
+                                <td class="current"><p>13</p></td>
+                                <td class="current"><p>14</p></td>
+                                <td class="current"><p>15</p></td>
+                                <td class="current"><p>16</p></td>
+                                <td class="current"><p>17</p></td>
+                            </tr>
+                            <tr>
+                            	<td class="current"><p>18</p></td>
+                                <td class="current"><p>19</p></td>
+                                <td class="current"><p>20</p></td>
+                                <td class="current"><p>21</p></td>
+                                <td class="current"><p>22</p></td>
+                                <td class="current"><p>23</p></td>
+                                <td class="current"><p>24</p></td>
+                            </tr>
+                            <tr>
+                            	<td class="current"><p>25</p></td>
+                                <td class="current"><p>26</p></td>
+                                <td class="current"><p>27</p></td>
+                                <td class="current"><p>28</p></td>
+                                <td><p>1</p></td>
+                                <td><p>2</p></td>
+                                <td><p>3</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    	</div>
+    	<div class="row portal">
+        	<div class="four columns mobile-two">
+            	<div class="standard-outer">
+                    <div class="standard-upper">
+                        <div class="standard-upper-image-small" style="background:#E8E8E8; background-size: cover;"></div>
+                        <div class="standard-upper-icon">
+                            <img src="/images/icons/addevent.png">
+                        </div>
+                        <div class="standard-upper-type">
+                            <h6 class="text-center text-red uppercase">Create Event</h6>
+                        </div>
+                        <div class="standard-upper-title">
+                            <div class="lower">
+                                <h5 class="text-center">Create an Event</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row quarter-spacer"></div>
+                </div>
+            </div>
+            <div class="four columns mobile-two">
+            	<div class="standard-outer">
+                    <div class="standard-upper">
+                        <div class="standard-upper-image-small" style="background:#E8E8E8; background-size: cover;"></div>
+                        <div class="standard-upper-icon">
+                            <img src="/images/icons/findevent.png">
+                        </div>
+                        <div class="standard-upper-type">
+                            <h6 class="text-center text-red uppercase">Discover Events</h6>
+                        </div>
+                        <div class="standard-upper-title">
+                            <div class="lower">
+                                <h5 class="text-center">Find an Event</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row quarter-spacer"></div>
+                </div>
+            </div>
+            <div class="four columns mobile-two">
+            	<div class="standard-outer">
+                    <div class="standard-upper">
+                        <div class="standard-upper-image-small" style="background:#E8E8E8; background-size: cover;"></div>
+                        <div class="standard-upper-icon">
+                            <img src="/images/icons/findmember.png">
+                        </div>
+                        <div class="standard-upper-type">
+                            <h6 class="text-center text-red uppercase">Discover Members</h6>
+                        </div>
+                        <div class="standard-upper-title">
+                            <div class="lower">
+                                <h5 class="text-center">Find a Member</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row quarter-spacer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row portal">
+        	<div class="two columns mobile-one">
+            	<div class="awards-upper"><img src="/images/dev/star_placeholder_icon.png"></div>
+                <div class="awards-lower">
+                	<h6 class="text-center remove-margin">500 Start</h6>
+                </div>
+            </div>
+            <div class="two columns mobile-one">
+            	<div class="awards-upper"><img src="/images/dev/star_placeholder_icon.png"></div>
+                <div class="awards-lower">
+                	<h6 class="text-center remove-margin">500 Start</h6>
+                </div>
+            </div>
+            <div class="two columns mobile-one">
+            	<div class="awards-upper"><img src="/images/dev/star_placeholder_icon.png"></div>
+                <div class="awards-lower">
+                	<h6 class="text-center remove-margin">500 Start</h6>
+                </div>
+            </div>
+            <div class="two columns mobile-one">
+            	<div class="awards-upper"><img src="/images/dev/star_placeholder_icon.png"></div>
+                <div class="awards-lower">
+                	<h6 class="text-center remove-margin">500 Start</h6>
+                </div>
+            </div>
+            <div class="two columns mobile-one">
+            	<div class="awards-upper"><img src="/images/dev/star_placeholder_icon.png"></div>
+                <div class="awards-lower">
+                	<h6 class="text-center remove-margin">500 Start</h6>
+                </div>
+            </div>
+            <div class="two columns mobile-one">
+            	<div class="awards-upper"><img src="/images/dev/star_placeholder_icon.png"></div>
+                <div class="awards-lower">
+                	<h6 class="text-center remove-margin">500 Start</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="three columns">
+    	<div class="row portal hide-for-small">
+        	<div class="twelve columns">
+            	<div class="standard-notifications">
+                	<div class="standard-notifications-title"><h6 class="text-red">Notifications</h6></div>
+                    <ul>
+                    	<li><div class="standard-notifications-image" style="background: url(/images/dev/chelsea_profile_pic.png) no-repeat center center; background-size: cover;"></div><div class="standard-notifications-text"><p><strong>Jason Chris</strong> increase the bid for Fashion for Christmas Event</p></div></li>
+                        <li><div class="standard-notifications-image" style="background: url(/images/dev/chelsea_profile_pic.png) no-repeat center center; background-size: cover;"></div><div class="standard-notifications-text"><p><strong>Jason Chris</strong> increase the bid for Fashion for Christmas Event</p></div></li>
+                        <li><div class="standard-notifications-image" style="background: url(/images/dev/chelsea_profile_pic.png) no-repeat center center; background-size: cover;"></div><div class="standard-notifications-text"><p><strong>Jason Chris</strong> increase the bid for Fashion for Christmas Event</p></div></li>
+                        <li><div class="standard-notifications-image" style="background: url(/images/dev/chelsea_profile_pic.png) no-repeat center center; background-size: cover;"></div><div class="standard-notifications-text"><p><strong>Jason Chris</strong> increase the bid for Fashion for Christmas Event</p></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- InstanceEndEditable -->
+<div class="footer-shadow hide-for-small"></div>
+<div class="container footer">
+	<div class="row">
+    	<div class="nine columns centered">
+        	<div class="row">
+                <div class="three columns mobile-two">
+                    <ul>
+                        <li><strong>ABOUT BELLINITY</strong></li>
+                        <li><a href="">How Bellinity Works</a></li>
+                        <li><a href="">Our Company</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="three columns mobile-two">
+                	<ul>
+                        <li><strong>PLATFORM DETAILS</strong></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Help & FAQ</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="three columns mobile-two"></div>
+                <div class="three columns mobile-two">
+                    <div class="right footer-icons-outer">
+                        <a href=""><img src="/images/footer_pinterest.png" class="left footer-icons"></a>
+                        <a href=""><img src="/images/footer_googleplus.png" class="left footer-icons"></a>
+                        <a href=""><img src="/images/footer_twitter.png" class="left footer-icons"></a>
+                        <a href=""><img src="/images/footer_facebook.png" class="left footer-icons"></a>
+                    </div>
+                    <div class="right">
+                        <img src="/images/footer_logo.png" class="right">
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>	
+</div>
+<div class="container sub-footer">
+	<div class="row">
+    	<div class="three columns centered">
+        	<p class="text-center text-white">© 2013 Bellinity. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+  
+  
+  
+  
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  
+  <script src="javascripts/jquery.js"></script>
+  
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  
+  <script src="javascripts/jquery.foundation.buttons.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  
+  <script src="javascripts/jquery.placeholder.js"></script>
+  
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  
+  <script src="javascripts/jquery.foundation.joyride.js"></script>
+  
+  <script src="javascripts/jquery.foundation.clearing.js"></script>
+  
+  <script src="javascripts/jquery.foundation.magellan.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="/javascripts/app.js"></script>
+</body>
+<!-- InstanceEnd --></html>
